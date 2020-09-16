@@ -1,2 +1,2 @@
-# Minoyoo.github.io-
+# Minoyoo.github.io
 Mino‘s Blog
