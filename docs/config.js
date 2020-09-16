@@ -1,8 +1,9 @@
 docute.init({
-    // 配置...
-    landing: true,
-    // 也可以用自定义页面
-    //landing: '_my-landing.html',
-    // 当然 markdown 文件也可以
-    //landing: 'landing.md'
+    // 标题栏
+    nav: [
+        // 首页
+        {title: '首页', path: '/'},
+        // 中文文档
+        {title: '博客', path: 'https://wugenqiang.github.io/'}
+      ]
   })
