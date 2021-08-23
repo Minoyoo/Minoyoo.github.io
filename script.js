@@ -3,6 +3,11 @@
 new Docute({
   target: '#docute',
   sourcePath: './docs/',
+
+  banner: `Please <a href="https://donate.com/link">
+  donate</a> <ExternalLinkIcon /> to support this project!`
+  ,
+  logo: '<span><img src="/123.jpg" /> 123</span>',
   nav: [
     {
       title: 'Home',
@@ -13,6 +18,13 @@ new Docute({
       link: '/about'
     }
   ],
+  theme: 'default', //default dark
+  detectSystemDarkTheme: true,
+  darkThemeToggler: true, 
+  versions: [
+
+  ],
+  layout: 'narrow', //wide narrow left
   sidebar: [
     {
       title: 'Guide',
@@ -26,6 +38,6 @@ new Docute({
           link: '/installation'
         }
       ]
-    }
+    },
   ]
 })
