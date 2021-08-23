@@ -3,12 +3,36 @@
 new Docute({
   target: '#docute',
   sourcePath: './docs/',
-
-  banner: `Please <a href="https://donate.com/link">
-  donate</a> <ExternalLinkIcon /> to support this project!`
-  ,
-  logo: '<span><img src="/123.jpg" /> 123</span>',
-  nav: [
+  logo: {
+    template: `
+    <div>
+      <ImageZoom 
+      src="https://i.loli.net/2018/09/24/5ba8e878850e9.png" 
+      :border="true" 
+      width="30"
+      />
+      <span>MinoYoo</span>
+    </div>
+    `
+  },
+  banner: {
+    template: `
+    <div class="note">
+      Please <a href="https://donate.com/link">
+      donate</a> <ExternalLinkIcon /> to support this project!
+    </div>
+    `
+  },
+  footer: {
+    template: `
+    <ImageZoom 
+    src="https://i.loli.net/2018/09/24/5ba8e878850e9.png" 
+    :border="true" 
+    width="300"
+  />
+    `
+  },
+   nav: [
     {
       title: 'Home',
       link: '/'
@@ -39,5 +63,6 @@ new Docute({
         }
       ]
     },
-  ]
+  ],
+  
 })
