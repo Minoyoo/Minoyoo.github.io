@@ -7,29 +7,31 @@ new Docute({
     template: `
     <div>
       <ImageZoom 
-      src="https://i.loli.net/2018/09/24/5ba8e878850e9.png" 
-      :border="true" 
-      width="30"
+      src="https://github.com/Minoyoo/Minoyoo.github.io/blob/master/logo.jpg?raw=true" 
+      :border="false" 
+      width="37"
       />
-      <span>MinoYoo</span>
+      <span 
+      style="font-weight:bold;font-size:30px"
+      >MinoYoo</span>
     </div>
     `
   },
   banner: {
     template: `
     <div class="note">
-      Please <a href="https://donate.com/link">
+      💗 Please <a href="https://donate.com/link">
       donate</a> <ExternalLinkIcon /> to support this project!
     </div>
     `
   },
   footer: {
     template: `
-    <ImageZoom 
-    src="https://i.loli.net/2018/09/24/5ba8e878850e9.png" 
-    :border="true" 
-    width="300"
-  />
+    <Note>
+
+    This is a warning for something very important.
+
+    </Note>
     `
   },
    nav: [
