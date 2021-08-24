@@ -13,7 +13,7 @@ new Docute({
     template: `
     <div>
       <ImageZoom 
-      src="https://github.com/Minoyoo/Minoyoo.github.io/blob/master/logo.jpg?raw=true" 
+      src="./logo.jpg" 
       :border="false" 
       width="37"
       />
@@ -83,6 +83,10 @@ new Docute({
       title: '产品经理',
       link: '/pm/'
     },
+    {
+      title: '书籍',
+      link: '/book/'
+    }
   ],
   overrides: {
     '/': {
@@ -175,6 +179,13 @@ new Docute({
      */
     '/pm/': {
       language: '产品经理',
+    },
+    /**
+     * 阅读 相关
+     * link: '/book/'
+     */
+    'book': {
+      language: '书籍',
     },
   
 }
