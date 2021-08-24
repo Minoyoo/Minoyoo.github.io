@@ -47,24 +47,114 @@ new Docute({
   theme: 'default', //default dark
   detectSystemDarkTheme: true,
   darkThemeToggler: true, 
-  versions: [
-
-  ],
   layout: 'narrow', //wide narrow left
   sidebar: [
     {
-      title: 'Guide',
-      links: [
+      title: '目录',
+      children: [
         {
-          title: 'Introduction',
-          link: '/introduction'
+          title: 'BlockChain',
+          link: '/blockchain/'
         },
         {
-          title: 'Installation',
-          link: '/installation'
-        }
+          title: 'Linux',
+          link: '/linux/'
+        },
+        {
+          title: 'Python',
+          link: '/python/'
+        },
+        {
+          title: 'Docker',
+          link: '/docker/'
+        },
+        {
+          title: '数据分析',
+          link: '/data_analysis/'
+        },
+        {
+          title: '产品经理',
+          link: '/pm/'
+        },
       ]
     },
   ],
+  overrides: {
+    '/': {
+      language: 'Home'
+    },
+    '/blockchain/': {
+      language: 'BlockChain',
+      sidebar: [
+        {
+          title: 'BlockChain',
+          children: [
+            {
+              title: '工具',
+              link: '/blockchain/tools'
+            },
+            {
+              title: '自定义',
+              link: '/zh/guide/customization'
+            },
+            {
+              title: 'Markdown 功能',
+              link: '/zh/guide/markdown-features'
+            },
+            {
+              title: '在 Markdown 中使用 Vue',
+              link: '/zh/guide/use-vue-in-markdown'
+            },
+            {
+              title: '国际化',
+              link: '/zh/guide/internationalization'
+            },
+          ]
+        }
+      ]
+    },
+    '/linux/': {
+      language: 'Linux',
+      sidebar: [
+        {
+          title: '指南',
+          children: [
+            {
+              title: '介绍',
+              link: '/zh'
+            },
+            {
+              title: '自定义',
+              link: '/zh/guide/customization'
+            },
+            {
+              title: 'Markdown 功能',
+              link: '/zh/guide/markdown-features'
+            },
+            {
+              title: '在 Markdown 中使用 Vue',
+              link: '/zh/guide/use-vue-in-markdown'
+            },
+            {
+              title: '国际化',
+              link: '/zh/guide/internationalization'
+            },
+          ]
+        }
+      ]
+    },
+    '/python/': {
+      language: 'Python',
+    },
+    '/docker/': {
+      language: 'Docker',
+    },
+    '/data_analysis/': {
+      language: '数据分析',
+    },
+    '/pm/': {
+      language: '产品经理',
+    },
+  }
   
 })
