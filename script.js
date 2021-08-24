@@ -3,6 +3,12 @@
 new Docute({
   target: '#docute',
   sourcePath: './docs/',
+
+  highlight: ['typescript', 'bash', 'json', 'markdown'],
+  
+  editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
+  editLinkText: 'Edit this page on GitHub',
+
   logo: {
     template: `
     <div>
@@ -50,111 +56,127 @@ new Docute({
   layout: 'narrow', //wide narrow left
   sidebar: [
     {
-      title: '目录',
-      children: [
-        {
-          title: 'BlockChain',
-          link: '/blockchain/'
-        },
-        {
-          title: 'Linux',
-          link: '/linux/'
-        },
-        {
-          title: 'Python',
-          link: '/python/'
-        },
-        {
-          title: 'Docker',
-          link: '/docker/'
-        },
-        {
-          title: '数据分析',
-          link: '/data_analysis/'
-        },
-        {
-          title: '产品经理',
-          link: '/pm/'
-        },
-      ]
+      title: 'Home',
+      link: '/'
+    },
+    {
+      title: 'BlockChain',
+      link: '/blockchain/'
+    },
+    {
+      title: 'Linux',
+      link: '/linux/'
+    },
+    {
+      title: 'Python',
+      link: '/python/'
+    },
+    {
+      title: 'Docker',
+      link: '/docker/'
+    },
+    {
+      title: '数据分析',
+      link: '/data_analysis/'
+    },
+    {
+      title: '产品经理',
+      link: '/pm/'
     },
   ],
   overrides: {
     '/': {
       language: 'Home'
     },
+    /**
+     * 区块链相关
+     * link: '/blockchain/'
+     */
     '/blockchain/': {
-      language: 'BlockChain',
+      language: 'BlockChain', 
       sidebar: [
         {
           title: 'BlockChain',
+          link: '/blockchain'
+        },
+        {
+          title: '工具', //link: '/blockchain/tools/'
           children: [
             {
-              title: '工具',
-              link: '/blockchain/tools'
+              title: 'metamask',
+              link: '/blockchain/tools/1'
             },
             {
-              title: '自定义',
-              link: '/zh/guide/customization'
-            },
+              title: 'tokenpocket',
+              link: '/blockchain/tools/2'
+            }
+          ],
+        },
+        {
+          title: '公链', //link: '/blockchain/chain/'
+          children: [
             {
-              title: 'Markdown 功能',
-              link: '/zh/guide/markdown-features'
-            },
-            {
-              title: '在 Markdown 中使用 Vue',
-              link: '/zh/guide/use-vue-in-markdown'
-            },
-            {
-              title: '国际化',
-              link: '/zh/guide/internationalization'
-            },
+              title: '',
+              link: ''
+            }
           ]
-        }
+        },
+        {
+          title: 'DApp', //link: '/blockchain/dapp/'
+          children: [
+            {
+              title: '',
+              link: ''
+            }
+          ]
+        },
+        {
+          title: '项目观察区', //link: '/blockchain/survey/'
+          children: [
+            {
+              title: '',
+              link: ''
+            }
+          ]
+        },
       ]
     },
+    /**
+     * Linux 相关
+     * link: '/linux/'
+     */
     '/linux/': {
       language: 'Linux',
-      sidebar: [
-        {
-          title: '指南',
-          children: [
-            {
-              title: '介绍',
-              link: '/zh'
-            },
-            {
-              title: '自定义',
-              link: '/zh/guide/customization'
-            },
-            {
-              title: 'Markdown 功能',
-              link: '/zh/guide/markdown-features'
-            },
-            {
-              title: '在 Markdown 中使用 Vue',
-              link: '/zh/guide/use-vue-in-markdown'
-            },
-            {
-              title: '国际化',
-              link: '/zh/guide/internationalization'
-            },
-          ]
-        }
-      ]
     },
+    /**
+     * Python 相关
+     * link: '/python/'
+     */
     '/python/': {
       language: 'Python',
     },
+    /**
+     * Docker 相关
+     * link: '/docker/'
+     */
     '/docker/': {
       language: 'Docker',
     },
+    /**
+     * 数据分析 相关
+     * link: '/data_analysis/'
+     */
     '/data_analysis/': {
       language: '数据分析',
     },
+    /**
+     * 产品经理 相关
+     * link: '/pm/'
+     */
     '/pm/': {
       language: '产品经理',
     },
-  }
+  
+}
   
 })
