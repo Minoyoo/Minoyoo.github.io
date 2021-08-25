@@ -3,12 +3,9 @@
 new Docute({
   target: '#docute',
   sourcePath: './docs/',
-
-  highlight: ['typescript', 'bash', 'json', 'markdown'],
-  
-  editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
+  highlight: ['typescript', 'bash', 'json', 'markdown'], 
+  editLinkBase: 'https://github.com/Minoyoo/Minoyoo.github.io/',
   editLinkText: 'Edit this page on GitHub',
-
   logo: {
     template: `
     <div>
@@ -23,23 +20,16 @@ new Docute({
     </div>
     `
   },
-  banner: {
-    template: `
-    <div class="note">
-      💗 Please <a href="https://donate.com/link">
-      donate</a> <ExternalLinkIcon /> to support this project!
-    </div>
-    `
-  },
-  footer: {
-    template: `
-    <Note>
+  // banner: {
+  //   template: `
+  //   <Note :label="false">
 
-    This is a warning for something very important.
+  //   This is a warning for something very important.
 
-    </Note>
-    `
-  },
+  //   </Note>
+  //   `
+  // },
+  
    nav: [
     {
       title: 'Home',
@@ -187,7 +177,15 @@ new Docute({
     'book': {
       language: '书籍',
     },
-  
-}
+  },
+
+  footer: `
+  <div style="border-top:1px solid var(--border-color);padding-top:30px;margin: 40px 0;color:#999999;font-size: .9rem;">
+  &copy; ${new Date().getFullYear()} 
+  Copyright by <a href="https://github.com/Minoyoo" target="_blank">Mino</a>. 
+  Powered by <a href="https://egoist.sh" target="_blank">EGOIST</a>. 
+  Released under MIT license.
+  </div>
+  `,
   
 })
