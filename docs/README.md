@@ -1,10 +1,10 @@
 # Home
 
-Looking good? Edit this on [Repl.it](https://repl.it/@egoist/docute-starter).
+**做你该做的事情，**
 
-To run this repl locally, [download me](https://repl.it/@egoist/docute-starter.zip) and run:
+**并且接受他的事与愿违，**
 
-```bash
-npm i
-npm start
-```
+**因为人总是喜欢追求最优选择，**
+
+**但是追求最优选择的后果往往是事与愿违。**
+
